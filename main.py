@@ -113,8 +113,8 @@ class ReadingTread(QtCore.QThread):
 
     def __init__(self, parent=None):
         QThread.__init__(self, parent)
-        # 192.168.2.20
-        self.ip_address = '10.41.236.115'
+        
+        self.ip_address = IP
         self.weight = '0'
         self.running = False
         self.comm_name = 'COM1'
